@@ -1,0 +1,17 @@
+
+CREATE TABLE users(
+  phone int8 PRIMARY KEY,
+  name VARCHAR(30) NOT NULL,
+  block bool DEFAULT false,
+  created_at TIMESTAMP NOT NULL,
+  updated_at TIMESTAMP NOT NULL
+);
+
+
+
+DROP TABLE users;
+
+-- 	INSERT INTO users (phone, name, block, created_at, updated_at)
+-- 	VALUES ( '9123456722','Фарид Султанович', false , Now(), Now());
+
+([\+]?[7|8][\s-(]?[9][0-9]{2}[\s-)]?)?([\d]{3})[\s-]?([\d]{2})[\s-]?([\d]{2})
